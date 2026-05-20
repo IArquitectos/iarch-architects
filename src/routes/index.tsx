@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowDown, Building2, PenTool, HardHat, ClipboardCheck, Sofa, Wrench, Quote } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext, type CarouselApi } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
 import hero from "../assets/hero.jpg";
 import project1 from "../assets/project-1.jpg";
 import project2 from "../assets/project-2.jpg";

@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Facebook, Instagram } from "lucide-react";
+import { Facebook } from "lucide-react";
 
 export function Footer() {
   return (
@@ -16,9 +16,6 @@ export function Footer() {
           <div className="flex gap-4 mt-8">
             <a href="https://facebook.com" aria-label="Facebook" className="p-2.5 border border-[var(--lino)]/20 hover:bg-[var(--terracota)] hover:border-[var(--terracota)] transition-colors duration-500">
               <Facebook size={16} />
-            </a>
-            <a href="https://instagram.com" aria-label="Instagram" className="p-2.5 border border-[var(--lino)]/20 hover:bg-[var(--terracota)] hover:border-[var(--terracota)] transition-colors duration-500">
-              <Instagram size={16} />
             </a>
           </div>
         </div>
