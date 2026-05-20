@@ -154,9 +154,9 @@ function Contacto() {
               <div className="bg-[var(--arena)] p-8">
                 <h3 className="font-display text-2xl mb-6">Visítanos</h3>
                 <ul className="space-y-4 text-sm">
-                  <li className="flex gap-3"><Phone size={16} className="text-accent mt-1" /> +52 (55) 0000 0000</li>
-                  <li className="flex gap-3"><Mail size={16} className="text-accent mt-1" /> hola@iarquitectos.mx</li>
-                  <li className="flex gap-3"><MapPin size={16} className="text-accent mt-1" /> Av. Presidente Masaryk 123,<br />Polanco, CDMX, MX</li>
+                  <li className="flex gap-3"><Phone size={16} className="text-accent mt-1" /> +52 (33) 3201 6859</li>
+                  <li className="flex gap-3"><Mail size={16} className="text-accent mt-1" /> israelarquitectosmx@gmail.com</li>
+                  <li className="flex gap-3"><MapPin size={16} className="text-accent mt-1" /> Zapopan, Jalisco · MX</li>
                 </ul>
               </div>
             </Reveal>

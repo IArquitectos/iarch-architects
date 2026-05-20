@@ -41,9 +41,9 @@ export function Footer() {
         <div>
           <h4 className="text-[11px] uppercase tracking-[0.25em] text-[var(--lino)]/50 mb-5">Contacto</h4>
           <ul className="space-y-3 text-sm text-[var(--lino)]/80">
-            <li>+52 (55) 0000 0000</li>
-            <li>hola@iarquitectos.mx</li>
-            <li>Ciudad de México · MX</li>
+            <li>+52 (33) 3201 6859</li>
+            <li>israelarquitectosmx@gmail.com</li>
+            <li>Zapopan, Jalisco · MX</li>
           </ul>
         </div>
       </div>
