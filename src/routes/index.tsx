@@ -178,3 +178,94 @@ function Home() {
     </>
   );
 }
+
+const testimonials = [
+  {
+    quote: "IArquitectos no entregó una casa. Entregó un lugar al que mi familia llamaría hogar.",
+    name: "María Eugenia Castellanos",
+    role: "Inversionista",
+  },
+  {
+    quote: "Cada detalle de mi consultorio refleja serenidad y precisión. Mis pacientes lo sienten al entrar.",
+    name: "Dr. Ricardo Vásquez Mendoza",
+    role: "Médico Cirujano",
+  },
+  {
+    quote: "Transformaron mi despacho en un espacio donde la sobriedad y la calidez conviven sin esfuerzo.",
+    name: "Lic. Andrea Solís Romero",
+    role: "Abogada Corporativa",
+  },
+  {
+    quote: "Diseñaron una tienda que cuenta mi marca antes de que el cliente vea un solo producto.",
+    name: "Fernando Aguirre Lozano",
+    role: "Comerciante",
+  },
+  {
+    quote: "Mi casa se siente hecha a mano, pero con la disciplina de un proyecto pensado al milímetro.",
+    name: "Dra. Paulina Herrera Ríos",
+    role: "Odontóloga",
+  },
+  {
+    quote: "Entendieron al restaurante como un espacio de hospitalidad, no solo como un local más.",
+    name: "Chef Mauricio Ibarra Quintero",
+    role: "Restaurantero",
+  },
+];
+
+function TestimonialsSection() {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+    setCurrent(api.selectedScrollSnap());
+    api.on("select", () => setCurrent(api.selectedScrollSnap()));
+  }, [api]);
+
+  return (
+    <section className="py-32 bg-[var(--arena)]/40">
+      <div className="container-edit max-w-4xl">
+        <Reveal>
+          <div className="text-center mb-12">
+            <span className="text-[11px] uppercase tracking-[0.3em] text-accent">— Testimonios</span>
+            <Quote size={36} className="text-accent mx-auto mt-8" strokeWidth={1} />
+          </div>
+        </Reveal>
+
+        <Carousel opts={{ loop: true, align: "start" }} setApi={setApi}>
+          <CarouselContent>
+            {testimonials.map((t) => (
+              <CarouselItem key={t.name}>
+                <div className="text-center px-4 md:px-10">
+                  <blockquote className="font-display text-2xl md:text-4xl leading-snug text-balance italic min-h-[180px] flex items-center justify-center">
+                    "{t.quote}"
+                  </blockquote>
+                  <p className="mt-10 text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                    {t.name} · {t.role}
+                  </p>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          <div className="hidden md:block">
+            <CarouselPrevious className="-left-4" />
+            <CarouselNext className="-right-4" />
+          </div>
+        </Carousel>
+
+        <div className="flex justify-center gap-2 mt-10">
+          {testimonials.map((_, i) => (
+            <button
+              key={i}
+              aria-label={`Ir al testimonio ${i + 1}`}
+              onClick={() => api?.scrollTo(i)}
+              className={`h-1.5 transition-all duration-500 ${current === i ? "w-8 bg-[var(--terracota)]" : "w-1.5 bg-muted-foreground/40"}`}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
