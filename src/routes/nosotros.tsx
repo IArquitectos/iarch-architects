@@ -67,7 +67,7 @@ function Nosotros() {
           {[
             { t: "Misión", d: "Diseñar y construir espacios que eleven la forma de habitar a través de un proceso integral, sin intermediarios." },
             { t: "Visión", d: "Ser referente latinoamericano de desarrollo inmobiliario con sello arquitectónico propio y proyección global." },
-            { t: "Valores", d: "Integridad, oficio, calidez, sustentabilidad y obsesión por el detalle." },
+            { t: "Valores", d: "Confianza, compromiso, integridad, oficio, calidez, sustentabilidad y obsesión por el detalle." },
           ].map((b, i) => (
             <Reveal key={b.t} delay={i * 100}>
               <h3 className="font-display text-3xl mb-4">{b.t}</h3>
