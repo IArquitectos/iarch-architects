@@ -153,20 +153,9 @@ function Home() {
         </div>
       </section>
 
-      {/* TESTIMONIAL */}
-      <section className="py-32">
-        <div className="container-edit max-w-4xl text-center">
-          <Reveal>
-            <Quote size={36} className="text-accent mx-auto mb-8" strokeWidth={1} />
-            <blockquote className="font-display text-3xl md:text-4xl leading-snug text-balance italic">
-              "IArquitectos no entregó una casa. Entregó un lugar al que mi familia llamaría hogar."
-            </blockquote>
-            <p className="mt-10 text-xs uppercase tracking-[0.25em] text-muted-foreground">
-              María Eugenia Castellanos · Inversionista
-            </p>
-          </Reveal>
-        </div>
-      </section>
+      {/* TESTIMONIALS */}
+      <TestimonialsSection />
+
 
       {/* CTA */}
       <section className="pb-32">
