@@ -119,7 +119,7 @@ function Home() {
           <div className="flex flex-wrap items-end justify-between gap-6 mb-16">
             <Reveal>
               <span className="text-[11px] uppercase tracking-[0.3em] text-accent">— Proyectos Destacados</span>
-              <h2 className="font-display text-4xl md:text-5xl mt-6 leading-tight">Espacios que cuentan historias.</h2>
+              <h2 className="font-display text-4xl md:text-5xl mt-6 leading-tight">Espacios que inspiran, proyectos que trascienden.</h2>
             </Reveal>
             <Reveal delay={150}>
               <Link to="/proyectos" className="inline-flex items-center gap-3 text-xs uppercase tracking-[0.2em] link-underline">
