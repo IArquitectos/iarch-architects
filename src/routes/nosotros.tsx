@@ -43,7 +43,7 @@ function Nosotros() {
           </Reveal>
           <div className="lg:col-span-5 lg:pt-20 space-y-8 text-muted-foreground leading-relaxed">
             <Reveal delay={100}>
-              <p className="text-lg">Nacimos en 2010 con una convicción clara: la arquitectura no es solo construir, es habitar. Lo que comenzó como un despacho boutique en la Ciudad de México evolucionó hasta convertirse en un grupo inmobiliario integral.</p>
+              <p className="text-lg">Nacimos en 1992 con una convicción clara: la arquitectura no es solo construir, es habitar. Lo que comenzó como un despacho boutique en Zapopan, Jalisco evolucionó hasta convertirse en un grupo inmobiliario integral.</p>
             </Reveal>
             <Reveal delay={200}>
               <p>Hoy, IArquitectos es la única firma mexicana que une desarrollo, diseño, construcción, interiorismo y operación bajo una sola marca, una sola visión estética, y una sola promesa.</p>
