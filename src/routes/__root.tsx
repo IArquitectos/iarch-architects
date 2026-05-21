@@ -57,7 +57,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "stylesheet", href: appCss }],
+    links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/png", href: "https://res.cloudinary.com/domuidttd/image/upload/v1779240582/Favicon_hv2waw.png" },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
