@@ -58,7 +58,7 @@ function Home() {
             </Reveal>
             <Reveal delay={300}>
               <p className="mt-8 max-w-xl text-base md:text-lg text-[var(--lino)]/80 leading-relaxed">
-                Grupo inmobiliario integral con presencia en México y proyectos internacionales. Las seis etapas del ciclo, una sola firma.
+                Grupo inmobiliario integral con presencia en México y proyectos internacionales. Las siete etapas del ciclo, una sola firma.
               </p>
             </Reveal>
             <Reveal delay={450}>

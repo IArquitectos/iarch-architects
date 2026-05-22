@@ -6,7 +6,7 @@ export const Route = createFileRoute("/servicios")({
   head: () => ({
     meta: [
       { title: "Servicios — IArquitectos" },
-      { name: "description", content: "Las seis unidades de negocio de IArquitectos: desarrollo, arquitectura, construcción, administración, interiorismo y operación." },
+      { name: "description", content: "Las siete unidades de negocio de IArquitectos: desarrollo, arquitectura, construcción, administración, interiorismo, bienes raíces y operación." },
       { property: "og:title", content: "Servicios — IArquitectos" },
       { property: "og:url", content: "/servicios" },
     ],
@@ -33,7 +33,7 @@ function Servicios() {
           <Reveal>
             <span className="text-[11px] uppercase tracking-[0.3em] text-accent">— Servicios</span>
             <h1 className="font-display text-5xl md:text-7xl mt-8 leading-[1] text-balance">
-              Seis unidades, <em className="italic">una sola firma.</em>
+              Siete unidades, <em className="italic">una sola firma.</em>
             </h1>
             <p className="mt-8 max-w-2xl text-muted-foreground text-lg">
               Cada unidad opera con autonomía técnica pero comparte una estética y un estándar comunes. Por eso podemos prometer continuidad real entre el plano y la llave.
