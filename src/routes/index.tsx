@@ -27,6 +27,7 @@ const cycle = [
   { icon: HardHat, title: "Construcción Residencial", desc: "Materializamos los diseños con precisión artesanal." },
   { icon: ClipboardCheck, title: "Administración y Control de Obra", desc: "Aseguramos la eficiencia financiera, plazos coherentes y un estricto seguimiento de calidad." },
   { icon: Sofa, title: "Interiorismo", desc: "Vestimos los espacios. Conectamos con la emoción de habitar." },
+  { icon: Building2, title: "Bienes Raíces y Comercialización", desc: "Conectamos proyectos con el comprador ideal y aceleramos el retorno de inversión." },
   { icon: Wrench, title: "Operación y Mantenimiento", desc: "Cuidamos la plusvalía a largo plazo, después de la entrega." },
 ];
 
@@ -92,7 +93,7 @@ function Home() {
             <div className="lg:col-span-6 lg:col-start-7 flex items-end">
               <Reveal delay={150}>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Somos el único grupo en el mercado que controla las seis etapas del ciclo inmobiliario bajo una sola visión estética coherente. Desde la atracción de capital hasta el mantenimiento post-entrega.
+                  Somos el único grupo en el mercado que controla las siete etapas del ciclo inmobiliario bajo una sola visión estética coherente. Desde la atracción de capital hasta el mantenimiento post-entrega.
                 </p>
               </Reveal>
             </div>
