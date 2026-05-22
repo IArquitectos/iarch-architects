@@ -93,7 +93,7 @@ function Home() {
             <div className="lg:col-span-6 lg:col-start-7 flex items-end">
               <Reveal delay={150}>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Somos el único grupo en el mercado que controla las seis etapas del ciclo inmobiliario bajo una sola visión estética coherente. Desde la atracción de capital hasta el mantenimiento post-entrega.
+                  Somos el único grupo en el mercado que controla las siete etapas del ciclo inmobiliario bajo una sola visión estética coherente. Desde la atracción de capital hasta el mantenimiento post-entrega.
                 </p>
               </Reveal>
             </div>
