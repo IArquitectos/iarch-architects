@@ -30,7 +30,8 @@ const cycle = [
   { icon: Wrench, title: "Operación y Mantenimiento", desc: "Cuidamos la plusvalía a largo plazo, después de la entrega." },
 ];
 
-const bienesRaices = { icon: Building2, title: "Bienes Raíces y Comercialización", desc: "Conectamos proyectos con el comprador ideal y aceleramos el retorno de inversión." };
+const BienesRaicesIcon = Building2;
+const bienesRaices = { title: "Bienes Raíces y Comercialización", desc: "Conectamos proyectos con el comprador ideal y aceleramos el retorno de inversión." };
 
 function Home() {
   return (
