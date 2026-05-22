@@ -27,9 +27,10 @@ const cycle = [
   { icon: HardHat, title: "Construcción Residencial", desc: "Materializamos los diseños con precisión artesanal." },
   { icon: ClipboardCheck, title: "Administración y Control de Obra", desc: "Aseguramos la eficiencia financiera, plazos coherentes y un estricto seguimiento de calidad." },
   { icon: Sofa, title: "Interiorismo", desc: "Vestimos los espacios. Conectamos con la emoción de habitar." },
-  { icon: Building2, title: "Bienes Raíces y Comercialización", desc: "Conectamos proyectos con el comprador ideal y aceleramos el retorno de inversión." },
   { icon: Wrench, title: "Operación y Mantenimiento", desc: "Cuidamos la plusvalía a largo plazo, después de la entrega." },
 ];
+
+const bienesRaices = { icon: Building2, title: "Bienes Raíces y Comercialización", desc: "Conectamos proyectos con el comprador ideal y aceleramos el retorno de inversión." };
 
 function Home() {
   return (
