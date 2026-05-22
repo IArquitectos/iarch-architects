@@ -27,9 +27,11 @@ const cycle = [
   { icon: HardHat, title: "Construcción Residencial", desc: "Materializamos los diseños con precisión artesanal." },
   { icon: ClipboardCheck, title: "Administración y Control de Obra", desc: "Aseguramos la eficiencia financiera, plazos coherentes y un estricto seguimiento de calidad." },
   { icon: Sofa, title: "Interiorismo", desc: "Vestimos los espacios. Conectamos con la emoción de habitar." },
-  { icon: Building2, title: "Bienes Raíces y Comercialización", desc: "Conectamos proyectos con el comprador ideal y aceleramos el retorno de inversión." },
   { icon: Wrench, title: "Operación y Mantenimiento", desc: "Cuidamos la plusvalía a largo plazo, después de la entrega." },
 ];
+
+const BienesRaicesIcon = Building2;
+const bienesRaices = { title: "Bienes Raíces y Comercialización", desc: "Conectamos proyectos con el comprador ideal y aceleramos el retorno de inversión." };
 
 function Home() {
   return (
@@ -100,12 +102,38 @@ function Home() {
           </div>
 
           <div className="grid gap-px bg-border/60 sm:grid-cols-2 lg:grid-cols-3 border border-border/60">
-            {cycle.map((c, i) => (
+            {cycle.slice(0, 3).map((c, i) => (
               <Reveal key={c.title} delay={i * 80}>
                 <div className="bg-[var(--lino)] p-8 md:p-10 h-full group hover-lift">
                   <div className="flex items-start justify-between mb-8">
                     <c.icon size={28} className="text-accent" strokeWidth={1.2} />
                     <span className="font-display italic text-muted-foreground text-sm">0{i+1}</span>
+                  </div>
+                  <h3 className="font-display text-2xl mb-3">{c.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{c.desc}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal delay={240}>
+            <div className="mt-px bg-[var(--madera)] text-[var(--lino)] px-8 md:px-10 py-6 flex items-center gap-6 group hover-lift border border-border/60 border-t-0">
+              <BienesRaicesIcon size={24} className="text-[var(--terracota)] shrink-0" strokeWidth={1.2} />
+              <div className="flex-1 min-w-0 flex flex-col md:flex-row md:items-center md:gap-6">
+                <h3 className="font-display text-xl md:text-2xl shrink-0">{bienesRaices.title}</h3>
+                <p className="text-sm text-[var(--lino)]/75 leading-relaxed md:flex-1">{bienesRaices.desc}</p>
+              </div>
+              <span className="font-display italic text-[var(--lino)]/60 text-sm shrink-0">04</span>
+            </div>
+          </Reveal>
+
+          <div className="grid gap-px bg-border/60 sm:grid-cols-2 lg:grid-cols-3 border border-border/60 border-t-0">
+            {cycle.slice(3).map((c, i) => (
+              <Reveal key={c.title} delay={i * 80}>
+                <div className="bg-[var(--lino)] p-8 md:p-10 h-full group hover-lift">
+                  <div className="flex items-start justify-between mb-8">
+                    <c.icon size={28} className="text-accent" strokeWidth={1.2} />
+                    <span className="font-display italic text-muted-foreground text-sm">0{i+5}</span>
                   </div>
                   <h3 className="font-display text-2xl mb-3">{c.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{c.desc}</p>
