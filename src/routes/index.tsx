@@ -25,7 +25,7 @@ const cycle = [
   { icon: Building2, title: "Desarrolladora Inmobiliaria", desc: "La cabeza del negocio. Atraemos inversionistas y estructuramos oportunidades." },
   { icon: PenTool, title: "Despacho de Arquitectura", desc: "Conceptualizamos espacios con identidad estética y propósito." },
   { icon: HardHat, title: "Construcción Residencial", desc: "Materializamos los diseños con precisión artesanal." },
-  { icon: ClipboardCheck, title: "Administración de Obra", desc: "Garantizamos plazos, presupuestos y calidad sin fisuras." },
+  { icon: ClipboardCheck, title: "Administración y Control de Obra", desc: "Aseguramos la eficiencia financiera, plazos coherentes y un estricto seguimiento de calidad." },
   { icon: Sofa, title: "Interiorismo", desc: "Vestimos los espacios. Conectamos con la emoción de habitar." },
   { icon: Wrench, title: "Operación y Mantenimiento", desc: "Cuidamos la plusvalía a largo plazo, después de la entrega." },
 ];
