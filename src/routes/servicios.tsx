@@ -6,7 +6,7 @@ export const Route = createFileRoute("/servicios")({
   head: () => ({
     meta: [
       { title: "Servicios — IArquitectos" },
-      { name: "description", content: "Las seis unidades de negocio de IArquitectos: desarrollo, arquitectura, construcción, administración, interiorismo y operación." },
+      { name: "description", content: "Las siete unidades de negocio de IArquitectos: desarrollo, arquitectura, construcción, administración, interiorismo, bienes raíces y operación." },
       { property: "og:title", content: "Servicios — IArquitectos" },
       { property: "og:url", content: "/servicios" },
     ],
