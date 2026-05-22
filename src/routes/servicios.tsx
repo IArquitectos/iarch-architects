@@ -21,7 +21,8 @@ const services = [
   { icon: HardHat, title: "Construcción Residencial", desc: "Ejecutamos con oficio. Equipos propios, materiales nobles y atención obsesiva al detalle artesanal." },
   { icon: ClipboardCheck, title: "Administración y Control de Obra", desc: "Aseguramos la eficiencia financiera, plazos coherentes y un estricto seguimiento de calidad." },
   { icon: Sofa, title: "Interiorismo", desc: "Vestimos cada espacio con piezas curadas, texturas y luz que convierten una casa en hogar." },
-  { icon: Wrench, title: "Operación y Mantenimiento", desc: "Acompañamos a propietarios e inversionistas con servicios post-entrega que preservan el valor del inmueble." },
+  { icon: Building2, title: "Bienes Raíces y Comercialización", desc: "Conectamos proyectos con el comprador ideal y aceleramos el retorno de inversión." },
+  { icon: Wrench, title: "Operación y Mantenimiento", desc: "Cuidamos la plusvalía a largo plazo, después de la entrega." },
 ];
 
 function Servicios() {
