@@ -43,24 +43,29 @@ function Servicios() {
       </section>
 
       <section className="pb-32">
-        <div className="container-edit grid md:grid-cols-2 gap-px bg-border/60 border border-border/60">
+        <div className="container-edit max-w-5xl border-t border-border/60">
           {services.map((s, i) => (
-            <Reveal key={s.title} delay={i * 60}>
-              <article className={`bg-[var(--lino)] p-10 md:p-14 h-full group hover-lift ${i % 2 === 1 ? "md:translate-y-0" : ""}`}>
-                <div className="flex items-start justify-between mb-10">
-                  <s.icon size={32} className="text-accent" strokeWidth={1.2} />
-                  <span className="font-display italic text-muted-foreground">0{i+1}</span>
+            <Reveal key={s.title} delay={i * 40}>
+              <article className="group border-b border-border/60 py-10 md:py-12 grid md:grid-cols-12 gap-6 md:gap-10 items-start hover:bg-[var(--lino)]/60 transition-colors duration-500 px-2 md:px-4">
+                <div className="md:col-span-1 flex items-center gap-4">
+                  <span className="font-display italic text-muted-foreground text-sm">0{i+1}</span>
                 </div>
-                <h2 className="font-display text-3xl md:text-4xl mb-4">{s.title}</h2>
-                <p className="text-muted-foreground leading-relaxed mb-8">{s.desc}</p>
-                <Link to="/contacto" className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] link-underline">
-                  Conocer más <ArrowUpRight size={14} />
-                </Link>
+                <div className="md:col-span-1">
+                  <s.icon size={28} className="text-accent" strokeWidth={1.2} />
+                </div>
+                <h2 className="md:col-span-4 font-display text-2xl md:text-3xl leading-tight">{s.title}</h2>
+                <p className="md:col-span-5 text-muted-foreground leading-relaxed">{s.desc}</p>
+                <div className="md:col-span-1 flex md:justify-end">
+                  <Link to="/contacto" aria-label={`Conocer más sobre ${s.title}`} className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] link-underline">
+                    <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                  </Link>
+                </div>
               </article>
             </Reveal>
           ))}
         </div>
       </section>
+
     </>
   );
 }
