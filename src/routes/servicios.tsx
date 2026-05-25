@@ -19,9 +19,9 @@ const services = [
   { icon: Building2, title: "Desarrolladora Inmobiliaria", desc: "Estructuramos oportunidades de inversión, atraemos capital y damos vida a proyectos desde la concepción del modelo de negocio." },
   { icon: PenTool, title: "Despacho de Arquitectura", desc: "Conceptualizamos espacios únicos. Cada proyecto nace de un análisis profundo del contexto, el clima y la cultura." },
   { icon: HardHat, title: "Construcción Residencial", desc: "Ejecutamos con oficio. Equipos propios, materiales nobles y atención obsesiva al detalle artesanal." },
+  { icon: Building2, title: "Bienes Raíces y Comercialización", desc: "Conectamos proyectos con el comprador ideal y aceleramos el retorno de inversión." },
   { icon: ClipboardCheck, title: "Administración y Control de Obra", desc: "Aseguramos la eficiencia financiera, plazos coherentes y un estricto seguimiento de calidad." },
   { icon: Sofa, title: "Interiorismo", desc: "Vestimos cada espacio con piezas curadas, texturas y luz que convierten una casa en hogar." },
-  { icon: Building2, title: "Bienes Raíces y Comercialización", desc: "Conectamos proyectos con el comprador ideal y aceleramos el retorno de inversión." },
   { icon: Wrench, title: "Operación y Mantenimiento", desc: "Cuidamos la plusvalía a largo plazo, después de la entrega." },
 ];
 
