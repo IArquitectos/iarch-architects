@@ -117,13 +117,13 @@ function Home() {
           </div>
 
           <Reveal delay={240}>
-            <div className="mt-px bg-[var(--madera)] text-[var(--lino)] px-8 md:px-10 py-6 flex items-center gap-6 group hover-lift border border-border/60 border-t-0">
-              <BienesRaicesIcon size={24} className="text-[var(--terracota)] shrink-0" strokeWidth={1.2} />
+            <div className="mt-px bg-[var(--lino)] px-8 md:px-10 py-6 flex items-center gap-6 group hover-lift border border-border/60 border-t-0">
+              <BienesRaicesIcon size={24} className="text-accent shrink-0" strokeWidth={1.2} />
               <div className="flex-1 min-w-0 flex flex-col md:flex-row md:items-center md:gap-6">
                 <h3 className="font-display text-xl md:text-2xl shrink-0">{bienesRaices.title}</h3>
-                <p className="text-sm text-[var(--lino)]/75 leading-relaxed md:flex-1">{bienesRaices.desc}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed md:flex-1">{bienesRaices.desc}</p>
               </div>
-              <span className="font-display italic text-[var(--lino)]/60 text-sm shrink-0">04</span>
+              <span className="font-display italic text-muted-foreground text-sm shrink-0">04</span>
             </div>
           </Reveal>
 
